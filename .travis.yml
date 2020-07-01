@@ -1,4 +1,5 @@
-language: java
+language: python
+python: 3.7
 sudo: false
 cache:
   directories:
@@ -6,5 +7,4 @@ cache:
 script:
   - set -e
   - mvn clean package --errors --batch-mode
-jdk:
-  - oraclejdk8
+
